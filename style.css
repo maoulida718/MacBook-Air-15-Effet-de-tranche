@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.container {
+	min-height: 100%;
+}
+
+.center {
+	top: 50%; left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.apple {
+	
+	background: url('https://i0.wp.com/images.frandroid.com/wp-content/uploads/2023/06/15-inch-macbook-air-wallpaper-4-scaled.jpeg?ssl=1');
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100px;
+	font-weight: 900;
+	animation: slice 3s, dynamic 7s infinite alternate linear;
+	white-space: nowrap;
+	
+}
+
+
+* {
+	user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+	.apple {
+		font-size: 70px;
+	}
+}
+
+/* Slice Animation */
+
+@keyframes slice {
+	
+	0% {	line-height: 0%; }
+	
+	100% {	line-height: 100%; }
+	
+}
+
+/* Dynamic Background Animation */
+
+@keyframes dynamic {
+	
+	0% {	background-position: 0% }
+	
+	100% {	background-position: 100%; }
+	
+}
+
+/* Watermark */
+
+.links {
+	position: absolute;
+	bottom: 5px; left: 10px;
+}
+
+a {
+	color: #313131;
+}
